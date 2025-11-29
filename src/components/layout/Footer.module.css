@@ -1,0 +1,306 @@
+.footer {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  color: white;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.brand {
+  max-width: 400px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.logoText {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brandDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cbd5e0;
+  margin-bottom: 32px;
+}
+
+.contact {
+  margin-bottom: 32px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #cbd5e0;
+  font-size: 0.9rem;
+}
+
+.contactItem svg {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 50%;
+  color: #667eea;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 12px;
+}
+
+.link {
+  color: #cbd5e0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.link:hover {
+  color: #667eea;
+  padding-left: 4px;
+}
+
+.bottom {
+  padding: 32px 0;
+}
+
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #cbd5e0;
+  font-size: 0.9rem;
+}
+
+.contactInfo svg {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 50%;
+  color: #667eea;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socialLink:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.copyright {
+  color: #718096;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.bottomLink {
+  color: #718096;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.bottomLink:hover {
+  color: #667eea;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 0;
+  }
+  
+  .content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .sections {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  .logo {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .logoText {
+    font-size: 1.6rem;
+  }
+  
+  .brand {
+    text-align: center;
+    max-width: none;
+  }
+  
+  .social {
+    justify-content: center;
+  }
+  
+  .bottomContent {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .leftSection {
+    align-items: center;
+  }
+
+  .rightSection {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .bottomLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 0 0;
+  }
+  
+  .sections {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .section {
+    text-align: center;
+  }
+  
+  .logoText {
+    font-size: 1.4rem;
+  }
+  
+  .brandDescription {
+    font-size: 0.9rem;
+  }
+  
+  .contact {
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .bottomLinks {
+    gap: 12px;
+  }
+  
+  .bottomLink {
+    font-size: 0.8rem;
+  }
+}

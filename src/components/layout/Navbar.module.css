@@ -1,0 +1,134 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.05));
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+
+/* Logo Styles - Based on screenshot */
+.logo {
+  flex-shrink: 0;
+}
+
+.logoWrapper {
+  text-align: center;
+}
+
+.logoTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.logoLine {
+  width: 40px;
+  height: 3px;
+  background: #FFD700;
+  border-radius: 2px;
+}
+
+.logoYear {
+  font-size: 14px;
+  color: #4ECDC4;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-family: 'Arial', sans-serif;
+}
+
+.logoText {
+  font-size: 36px;
+  font-weight: 900;
+  color: #FF4081;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(255, 64, 129, 0.3);
+  font-family: 'Arial Black', sans-serif;
+  background: linear-gradient(45deg, #FF4081, #E91E63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logoUnderline {
+  width: 100%;
+  height: 4px;
+  background: #FFD700;
+  margin-top: 8px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navContent {
+    height: 70px;
+  }
+
+  .logoText {
+    font-size: 30px;
+  }
+
+  .logoYear {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .logoLine {
+    width: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoText {
+    font-size: 24px;
+  }
+
+  .logoYear {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .logoLine {
+    width: 25px;
+    height: 2px;
+  }
+
+  .navContent {
+    height: 60px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}

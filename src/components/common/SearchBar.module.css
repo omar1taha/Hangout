@@ -1,0 +1,109 @@
+.searchBar {
+  display: flex;
+  background: white;
+  padding: 8px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  max-width: 1000px;
+  width: 100%;
+  gap: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.inputGroup {
+  flex: 1;
+  min-width: 0;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.2s ease;
+}
+
+.inputWrapper:focus-within {
+  background: #edf2f7;
+  transform: translateY(-1px);
+}
+
+.icon {
+  color: #718096;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.input {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: #2d3748;
+  width: 100%;
+  outline: none;
+  font-family: inherit;
+}
+
+.input::placeholder {
+  color: #a0aec0;
+}
+
+.input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.5);
+}
+
+.buttonWrapper {
+  flex-shrink: 0;
+}
+
+.searchButton {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px;
+  white-space: nowrap;
+}
+
+.buttonText {
+  font-weight: 600;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .searchBar {
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+  }
+  
+  .inputWrapper {
+    padding: 14px 16px;
+  }
+  
+  .input {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  .searchButton {
+    justify-content: center;
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchBar {
+    padding: 12px;
+  }
+  
+  .buttonText {
+    display: none;
+  }
+  
+  .searchButton {
+    padding: 16px;
+  }
+}
