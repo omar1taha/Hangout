@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Clock, Star, Tag } from 'lucide-react';
+import { Clock, Star } from 'lucide-react';
 import { Activity } from '../../types';
 import styles from './ActivityCard.module.css';
 

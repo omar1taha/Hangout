@@ -4,11 +4,7 @@ import { motion } from "framer-motion";
 // import SearchBar from '../common/SearchBar';
 import styles from "./Hero.module.css";
 
-interface HeroProps {
-  onSearch: () => void;
-}
-
-const Hero: React.FC<HeroProps> = ({ onSearch }) => {
+const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.overlay} />
