@@ -4,6 +4,19 @@ import { Shield, Award, Headphones, Globe, Clock, Heart, ChevronLeft, ChevronRig
 import { Benefit } from '../../types';
 import styles from './WhyChooseUs.module.css';
 
+// Import all slider images
+import prev1 from '/images/prev1.jpeg';
+import prev2 from '/images/prev2.jpeg';
+import prev3 from '/images/prev3.jpeg';
+import prev4 from '/images/prev4.jpeg';
+import prev5 from '/images/prev5.jpeg';
+import prev6 from '/images/prev6.jpeg';
+import prev7 from '/images/prev7.jpeg';
+import prev8 from '/images/prev8.jpeg';
+import prev9 from '/images/prev9.jpeg';
+import prev10 from '/images/prev10.jpeg';
+import prev11 from '/images/prev11.jpeg';
+
 // Filter to show only the three required benefits
 const benefits: Benefit[] = [
   {
@@ -28,17 +41,17 @@ const benefits: Benefit[] = [
 
 // Available images with prev prefix
 const sliderImages = [
-  '/images/prev1.jpeg',
-  '/images/prev2.jpeg',
-  '/images/prev3.jpeg',
-  '/images/prev4.jpeg',
-  '/images/prev5.jpeg',
-  '/images/prev6.jpeg',
-  '/images/prev7.jpeg',
-  '/images/prev8.jpeg',
-  '/images/prev9.jpeg',
-  '/images/prev10.jpeg',
-  '/images/prev11.jpeg',
+  prev1,
+  prev2,
+  prev3,
+  prev4,
+  prev5,
+  prev6,
+  prev7,
+  prev8,
+  prev9,
+  prev10,
+  prev11,
 ];
 
 const iconComponents = {

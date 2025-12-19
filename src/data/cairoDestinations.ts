@@ -1,3 +1,10 @@
+import egmImage from '/images/egm.png';
+import kkImage from '/images/kk.jpeg';
+import nrcImage from '/images/nrc.jpg';
+import ocwtImage from '/images/ocwt.jpg';
+import bpImage from '/images/bp.jpeg';
+import amwImage from '/images/amw.jpeg';
+
 export const cairoDestinations = [
   {
     id: "1",
@@ -15,7 +22,7 @@ export const cairoDestinations = [
     name: "Grand Egyptian Museum",
     arabicName: "المتحف المصري الجديد",
     hours: "9 am - 10 pm",
-    image: "/images/egm.png",
+    image: egmImage,
     description: "The world's largest archaeological museum dedicated to ancient Egyptian civilization.",
     price: 500,
     rating: 4.8,
@@ -26,7 +33,7 @@ export const cairoDestinations = [
     name: "Khan El Khalili Bazaar",
     arabicName: "سوق خان الخليلي",
     hours: "10 am - 1 am",
-    image: "/images/kk.jpeg",
+    image: kkImage,
     description: "Historic market and bazaar in Islamic Cairo, perfect for traditional crafts and souvenirs.",
     price: 0,
     rating: 4.6,
@@ -74,7 +81,7 @@ export const cairoActivities = [
     arabicName: "رحلات النيل الباخرة الفرعونية",
     description: "Enjoy a magical evening on the Nile with dinner and traditional entertainment.",
     hours: "3 pm - 12 pm",
-    image: "/images/nrc.jpg",
+    image: nrcImage,
     price: 1200,
     duration: "3 hours",
     rating: 4.8,
@@ -86,7 +93,7 @@ export const cairoActivities = [
     arabicName: "الكنيسة المعلقة وكنائس مصر القديمة",
     description: "Explore Coptic Cairo including the Hanging Church and ancient religious sites.",
     hours: "9 am - 4 pm",
-    image: "/images/ocwt.jpg",
+    image: ocwtImage,
     price: 150,
     duration: "4 hours",
     rating: 4.7,
@@ -98,7 +105,7 @@ export const cairoActivities = [
     arabicName: "قصر البارون",
     description: "Visit the unique Hindu-inspired palace built by Belgian millionaire Baron Empain.",
     hours: "9 am - 4 pm",
-    image: "/images/bp.jpeg",
+    image: bpImage,
     price: 100,
     duration: "2 hours",
     rating: 4.5,
@@ -110,7 +117,7 @@ export const cairoActivities = [
     arabicName: "ممشى أهل مصر",
     description: "Scenic waterfront promenade along the Nile with restaurants and entertainment.",
     hours: "9 am - 10 pm",
-    image: "/images/amw.jpeg",
+    image: amwImage,
     price: 0,
     duration: "2-3 hours",
     rating: 4.4,
